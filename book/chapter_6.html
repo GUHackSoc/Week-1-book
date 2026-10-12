@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-dd0cf4c2.js";
+            window.path_to_searchindex_js = "searchindex-559a8502.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-0dbfcce5.js"></script>
@@ -179,13 +179,13 @@
 <p>There are 3 common ways of fixing XSS:</p>
 <ol>
 <li>
-<p>Escaping HTML for user inputed variables. This is general and can be applied to most different technologies.</p>
+<p>Escaping HTML for user inputted variables. This is general and can be applied to most different technologies.</p>
 </li>
 <li>
 <p>In Flask (and most web app frameworks) you can use template render functions that have in built XSS prevention and are the standard way of making websites. <a href="https://www.geeksforgeeks.org/python/flask-rendering-templates/">https://www.geeksforgeeks.org/python/flask-rendering-templates/</a></p>
 </li>
 <li>
-<p>Implementing Content Security Policie which is a response header that allows website administrators to control resources the user agent is allowed to load for a given page. Allowing them to limit the ability of scripts from executing from particular sources. <a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></p>
+<p>Implementing a Content Security Policy which is a response header that allows website administrators to control resources the user agent is allowed to load for a given page. Allowing them to limit the ability of scripts from executing from particular sources. <a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></p>
 </li>
 </ol>
 <p>For the purposes of this exercise we will keep it simple and just use the escape funtion:</p>
