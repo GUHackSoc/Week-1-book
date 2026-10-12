@@ -2,8 +2,6 @@
 
 Check out:
 
-XSS labs​ - [https://hacky.uk/](https://hacky.uk/)
+Practical XSS Challenges​ - [https://hacky.uk/allLabs](https://hacky.uk/allLabs)
 
-PortSwigger Web Security Academy - [https://portswigger.net/web-security​](https://portswigger.net/web-security)
-
-Juice Shop - [https://owasp.org/www-project-juice-shop/​](https://owasp.org/www-project-juice-shop/​)
+PortSwigger Web Security Academy XSS - [https://portswigger.net/web-security/cross-site-scripting​](https://portswigger.net/web-security/cross-site-scripting)
