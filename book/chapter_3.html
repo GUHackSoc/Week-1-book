@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b01490fb.js";
+            window.path_to_searchindex_js = "searchindex-470f24a5.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-0dbfcce5.js"></script>
@@ -216,7 +216,20 @@ if __name__ == '__main__':
 </code></pre>
 <p>Change default=Callum to your username.</p>
 <p>Here is mine with my basic.html code between the f’‘’ ‘’’:</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+<pre><code class="language-python">
+import flask
+
+app = flask.Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'hello world'
+
+@app.route('/hello')
+def hello_user():
+    user = flask.request.args.get('user', default='Callum')
+    return f'''
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
         &lt;style&gt;
@@ -233,6 +246,9 @@ if __name__ == '__main__':
        &lt;p&gt;&lt;span&gt;Hi there! {user}&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;
+'''
+if __name__ == '__main__':
+    app.run()
 </code></pre>
 <p>Note that I changed each “{” and “}” to “{{” and “}}” and added the {user} variable, you should do this with your code too.
 I have also removed my alert script.</p>
