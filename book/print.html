@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-470f24a5.js";
+            window.path_to_searchindex_js = "searchindex-df269e82.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-0dbfcce5.js"></script>
@@ -391,6 +391,9 @@ I have also removed my alert script.</p>
 </code></pre>
 <p>New line to add below:</p>
 <pre><code class="language-python">user = html.escape(user)
+</code></pre>
+<p>Also update the import line to:</p>
+<pre><code class="language-python">import flask, html
 </code></pre>
 <p>Now try your payload, you should see that it is rendered safely.</p>
 <div style="break-before: page; page-break-before: always;"></div>

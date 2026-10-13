@@ -21,5 +21,10 @@ New line to add below:
 ```python
 user = html.escape(user)
 ```
+Also update the import line to:
+```python
+import flask, html
+```
+
 
 Now try your payload, you should see that it is rendered safely.
