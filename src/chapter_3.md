@@ -51,7 +51,20 @@ if __name__ == '__main__':
 Change default=Callum to your username.
 
 Here is mine with my basic.html code between the f''' ''':
-```html
+```python
+
+import flask
+
+app = flask.Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'hello world'
+
+@app.route('/hello')
+def hello_user():
+    user = flask.request.args.get('user', default='Callum')
+    return f'''
 <!DOCTYPE html>
 <html>
     <head>
@@ -69,6 +82,9 @@ Here is mine with my basic.html code between the f''' ''':
        <p><span>Hi there! {user}</p>
     </body>
 </html>
+'''
+if __name__ == '__main__':
+    app.run()
 ```
 Note that I changed each "{" and "}" to "{{" and "}}" and added the {user} variable, you should do this with your code too.
 I have also removed my alert script.
