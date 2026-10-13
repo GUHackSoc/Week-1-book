@@ -20,18 +20,18 @@ python -m venv xss-environment
 Activate the environment run only one of the below:
 macOS/Linux:
 ```
-source myenv/bin/activate
+source xss-environment/bin/activate
 ```
 Windows (command prompt):
 ```
-myenv\Scripts\activate.bat
+xss-environment\Scripts\activate.bat
 ```
 Windows (powershell):
 ```
-.\myenv\Scripts\Activate.ps1
+.\xss-environment\Scripts\Activate.ps1
 ```
 
-Install Flask:
+Install Flask in the virtual environment:
 ```
 pip install flask
 ```
