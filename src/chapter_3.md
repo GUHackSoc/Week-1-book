@@ -21,7 +21,7 @@ if __name__ == '__main__':
 ```
 Run in your terminal:
 ```
-./basic.py
+python basic.py
 ```
 Then click on the localhost address to see a new webpage.
 
